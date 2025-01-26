@@ -39,11 +39,11 @@ const LoginScreen = () => {
   const [password, setPassword] = useState("");
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen bg-[#F5F5F5]">
-      <h2 className="text-3xl font-bold text-[#333333]">Welcome Teachers</h2>
-      <div className="w-full max-w-md bg-white shadow-md rounded-lg p-6 mt-4">
+    <div className="flex justify-center items-center h-screen bg-[#F5F5F5]">
+      <div className="w-full max-w-md bg-white shadow-md rounded-lg p-6 text-center">
+        <h2 className="text-3xl font-bold text-[#333333] mb-4">Welcome Teachers</h2>
         <div className="mb-4">
-          <label className="block text-sm font-medium text-[#333333]">Username</label>
+          <label className="block text-sm font-medium text-[#333333] text-left">Username</label>
           <input
             type="text"
             className="w-full border border-[#4A90E2] p-2 rounded"
@@ -52,7 +52,7 @@ const LoginScreen = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-sm font-medium text-[#333333]">Password</label>
+          <label className="block text-sm font-medium text-[#333333] text-left">Password</label>
           <input
             type="password"
             className="w-full border border-[#4A90E2] p-2 rounded"
@@ -62,12 +62,12 @@ const LoginScreen = () => {
         </div>
         <a
           href="#"
-          className="text-sm text-[#1C3D63] underline hover:text-[#F67A3B]"
+          className="text-sm text-[#1C3D63] underline hover:text-[#F67A3B] block mb-4"
         >
           Forgot Password?
         </a>
         <button
-          className="mt-6 w-full bg-[#4A90E2] text-white py-2 rounded"
+          className="w-full bg-[#4A90E2] text-white py-2 rounded"
           onClick={() => navigate("/upload")}
         >
           Enter

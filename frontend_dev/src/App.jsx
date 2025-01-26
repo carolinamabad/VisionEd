@@ -18,15 +18,17 @@ const WelcomeScreen = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen bg-[#4A90E2] text-white">
-      <h1 className="text-5xl font-bold">VisionEd</h1>
-      <p className="text-2xl mt-4">"Empowering educators, one lesson at a time."</p>
-      <button
-        className="mt-8 px-6 py-2 bg-[#8CC63F] rounded-full text-white text-lg"
-        onClick={() => navigate("/login")}
-      >
-        Login
-      </button>
+    <div className="flex-screen">
+      <div>
+        <h1 className="text-5xl font-bold">VisionEd</h1>
+        <p className="text-2xl mt-4">"Empowering educators, one lesson at a time."</p>
+        <button
+          className="mt-8 px-6 py-2 bg-[#8CC63F] rounded-full text-white text-lg"
+          onClick={() => navigate("/login")}
+        >
+          Login
+        </button>
+      </div>
     </div>
   );
 };
